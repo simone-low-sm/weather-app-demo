@@ -121,7 +121,7 @@ function App(): React.ReactElement {
 	}, [])
 
 	return (
-		<div className="bg-cover bg-[url('resources/images/bg-light.png')] dark:bg-[url('resources/images/bg-dark.png')] bg-opacity-60 bg-blend-soft-light min-h-screen min-w-screen text-black dark:text-white p-5 flex flex-col items-center text-sm md:text-base">
+		<div className="bg-cover bg-[url('resources/images/bg-light.png')] dark:bg-[url('resources/images/bg-dark.png')] bg-opacity-60 bg-blend-soft-light h-full w-full w-max-screen text-black dark:text-white p-5 flex flex-col items-center text-sm md:text-base">
 			<div className="md:w-[700px]">
 				<SearchForm handleSearch={handleSearch} />
 				<ErrorCard error={error} />
