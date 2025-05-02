@@ -10,6 +10,8 @@ import { HISTORY_LOCAL_STORAGE_KEY } from "./util/constants"
 import { SearchRecord } from "./components/SearchRecord/SearchRecordCard"
 import DarkModeToggle from "./components/DarkModeToggle"
 import WeatherFavicon from "./components/ui/WeatherFavicon"
+// import backgroundImage from "./assets/bg-light.png"
+// import backgroundImageDark from "./assets/bg-dark.png"
 
 /**
  * This app allows user to search for weather using city and country fields.
@@ -119,7 +121,7 @@ function App(): React.ReactElement {
 	}, [])
 
 	return (
-		<div className="bg-cover bg-[url(assets\bg-light.png)] dark:bg-[url(assets\bg-dark.png)] bg-opacity-60 bg-blend-soft-light min-h-screen min-w-screen text-black dark:text-white p-5 flex flex-col items-center text-sm md:text-base">
+		<div className="bg-cover bg-[url('resources/images/bg-light.png')] dark:bg-[url('resources/images/bg-dark.png')] bg-opacity-60 bg-blend-soft-light min-h-screen min-w-screen text-black dark:text-white p-5 flex flex-col items-center text-sm md:text-base">
 			<div className="md:w-[700px]">
 				<SearchForm handleSearch={handleSearch} />
 				<ErrorCard error={error} />

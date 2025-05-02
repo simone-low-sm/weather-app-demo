@@ -28,10 +28,7 @@ const WeatherFavicon = ({
 
 		link.type = "image/x-icon"
 		link.rel = "shortcut icon"
-		link.href =
-			weatherCode === 800
-				? "/src/assets/sun.png"
-				: "/src/assets/cloud.png"
+		link.href = weatherCode === 800 ? "/sun.png" : "/cloud.png"
 		document.getElementsByTagName("head")[0].appendChild(link)
 	}, [weatherCode])
 

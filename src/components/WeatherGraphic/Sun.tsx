@@ -1,3 +1,5 @@
+import sun from "../../resources/images/sun.png"
+
 /**
  * Renders a sun graphic
  * @returns {React.ReactElement<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>}
@@ -8,8 +10,6 @@ const Sun = (
 		HTMLImageElement
 	>
 ): React.ReactElement<HTMLImageElement> => {
-	return (
-		<img src="/src/assets/sun.png" className="w-max" alt="Sun" {...props} />
-	)
+	return <img src={sun} className="w-max" alt="Sun" {...props} />
 }
 export default Sun
